@@ -1,0 +1,124 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path": "pages/login/login",
+		    "style": {}
+			},
+		{
+		    "path": "pages/login/forget",
+		    "style": {}
+		}, {
+		    "path": "pages/login/register",
+		    "style": {}
+		} ,
+		{
+			"path": "pages/start/start",
+			"style": {
+				"navigationBarTitleText": "启动页面"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页", 
+                "backgroundColorTop": "#ebebeb",  
+                "backgroundColorBottom": "#ebebeb" ,
+				/*"app-plus": {
+				                    "bounce": "none",
+				                    "titleNView": {
+				                        "buttons": [ 
+				                            {
+				                                "text": "地图", 
+				                                "fontSize":"16",
+				                                "float": "right",
+				                                "color":"#fff"
+				                            },
+				                            {
+				                                "text": "唐山", 
+				                                "fontSize":"16",
+				                                "float": "left",
+				                                "color":"#fff"
+				                            }
+				                        ],
+				                        "searchInput":{
+				                                "align": "center",
+				                                "placeholder": "请输入查找房源信息",
+				                                "borderRadius":"50upx",
+				                                "backgroundColor": "#fff"
+				                            }
+				                    }
+				                }*/
+            }  
+		},
+		{
+			"path": "pages/group/group",
+			"style": {
+				"navigationBarTitleText": "小组"
+			}
+		},
+		{
+			"path": "pages/information/information",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/forum/forum",
+			"style": {
+				"navigationBarTitleText": "论坛"
+		    }
+		}
+	],
+	// "globalStyle": {
+	// 	"navigationBarTextStyle": "black",
+	// 	"navigationBarTitleText": "uni-app",
+	// 	"navigationBarBackgroundColor": "#F8F8F8",
+	// 	"backgroundColor": "#F8F8F8"
+	// },
+	// "navigationStyle": "custom",
+	
+
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"76fabc",
+		"backgroundColor":"beige",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"static/pg-index1.png",
+				"selectedIconPath":"static/pg-index.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/group/group",
+				"iconPath":"static/pg-group1.png",
+				"selectedIconPath":"static/pg-group.png",
+				"text":"小组"
+			},
+			{
+				"pagePath":"pages/information/information",
+				"iconPath":"static/pg-infor1.png",
+				"selectedIconPath":"static/pg-infor.png",
+				"text":"消息"
+			},
+			{
+				"pagePath":"pages/forum/forum",
+				"iconPath":"static/pg-forum1.png",
+				"selectedIconPath":"static/pg-forum.png",
+				"text":"论坛"
+			}
+		]
+	
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "pages/login/login", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+		
+	}
+}
